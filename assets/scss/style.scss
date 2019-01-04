@@ -1,0 +1,33 @@
+@import 'reset'; //importuoti galima ir kodo vidury, importas vyksta importavimo metu	
+
+// Sass komentaras matomas tik sass faile
+/*css komentaras kuris islieka sukompiliuotame faile*/
+
+//kintamieji
+$red: #ce042c;
+
+//Fonts
+$main-font: 'Roboto', sans-serif;  //jei nepasikrove 'Roboto', uzkrauk kazka pan. i sans-serif
+
+h1{
+	color: $red;
+}
+
+a{
+	background-color: $red;
+	font-family: $main-font;
+}
+
+//Kintamieji pavadinimuose
+$puses: top right bottom left;
+@each $puse in $puses{
+	.border-#{$puse}{
+		border-#{$puse}: 1px solid $red;
+	}
+}	
+//Sukuriame grid
+@for $i from 1 through 12{
+	.col-#{$i}{
+		width: 100% / 12 * $i;
+	}
+}
