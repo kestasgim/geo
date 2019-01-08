@@ -13,7 +13,6 @@ body {
 /* RESET End */
 nav {
   /*Strip the ul of padding and list styling*/
-  /*Create a horizontal list with spacing*/
   /*Style for menu links*/
   /*Hover state for top level links*/
   /*Style for dropdown links*/
@@ -32,13 +31,16 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  position: absolute;
-}
-
-nav li {
-  display: inline-block;
-  float: left;
-  margin-right: 1px;
+  /*Create a horizontal list with spacing*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 nav li a {
@@ -84,7 +86,7 @@ nav li ul li a {
   padding: 0 20px;
 }
 
-nav ul li a:hover + .hidden, nav .hidden:hover {
+nav ul li a:hover + .sub-menu, nav .sub-menu:hover {
   display: block;
 }
 

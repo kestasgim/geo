@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h1> ARCHIVE </h1>
+<h1> ARCHIVE-POST </h1>
 <?php 
 	#gauname uzklausos objekta, t.y. duomenis, kuriuos
 	//WP paprase gauti is D
