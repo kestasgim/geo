@@ -19,6 +19,7 @@ function theme_scripts(){
 
         wp_register_script('js_main', ASSETS_URL . '/assets/js/main.js', array('jquery'), '1.0', true);
         wp_enqueue_script('js_main');
+
     }
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');

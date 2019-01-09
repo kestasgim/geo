@@ -1,4 +1,8 @@
 nav{
+	li.current-menu-item, li.current-menu-ancestor{
+		font-weight: bold;
+	}
+	
 	/*Strip the ul of padding and list styling*/
 	ul {
 		list-style-type:none;

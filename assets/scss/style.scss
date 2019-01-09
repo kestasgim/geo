@@ -1,6 +1,8 @@
 @import 'reset'; //importuoti galima ir kodo vidury, importas vyksta importavimo metu	
 @import 'navmenu';
 @import 'fontawesome';
+@import 'capitals';
+@import 'slideshow';
 // Sass komentaras matomas tik sass faile
 /*css komentaras kuris islieka sukompiliuotame faile*/
 
@@ -14,13 +16,18 @@ h1{
 	color: $red;
 }
 
+.center{
+	text-align: center;
+}
+
 //Kintamieji pavadinimuose
 $puses: top right bottom left;
 @each $puse in $puses{
 	.border-#{$puse}{
 		border-#{$puse}: 1px solid $red;
 	}
-}	
+}
+	
 //Sukuriame grid
 @for $i from 1 through 12{
 	.col-#{$i}{

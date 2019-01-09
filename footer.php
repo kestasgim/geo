@@ -1,9 +1,10 @@
 
-		<p>
+		<p class = "center">
 			<small class="block">&copy; 2018 All Rights Reserved.</small> 
 			<small class="block">Designed by <a href="#" >Noob</a></small>
 		</p>
-<?php
+		<div class = "center">
+		<?php
 	// patikriname ar repeater saugo duomenis
 if( have_rows('footer_social_menu_repeater', 'option') ):
  	// pereiname per kiekviena repeater irasa
@@ -23,15 +24,14 @@ if( have_rows('footer_social_menu_repeater', 'option') ):
 		}
 		?>
         <!-- html blokas -->
-		<li>
 			<a href="<?php echo $link['url']; ?>" <?php echo $target;?>>
 				<i class= "fa <?php the_sub_field('icon'); ?>"></i>
 			</a>
-		</li>
         <?php
     endwhile;
 endif;
 ?>
+		</div>
 	
 	<?php wp_footer(); ?>
 	</body>
