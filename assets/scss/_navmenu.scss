@@ -1,5 +1,5 @@
 nav{
-	li.current-menu-item, li.current-menu-ancestor{
+	li.current-menu-item > a, li.current-menu-ancestor > a{
 		font-weight: bold;
 	}
 	

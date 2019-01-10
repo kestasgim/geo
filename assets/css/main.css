@@ -27,7 +27,7 @@ nav {
   /*Responsive Styles*/
 }
 
-nav li.current-menu-item, nav li.current-menu-ancestor {
+nav li.current-menu-item > a, nav li.current-menu-ancestor > a {
   font-weight: bold;
 }
 
